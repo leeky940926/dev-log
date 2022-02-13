@@ -13,8 +13,7 @@ https://kyleeee.tistory.com/
 * [CI&CD](https://kyleeee.tistory.com/category/CI%26CD)
 * [Docker](https://kyleeee.tistory.com/category/Docker)
 * [Network](https://kyleeee.tistory.com/category/Network)
-* ETC <br> 
-    * [정보처리기사](https://kyleeee.tistory.com/category/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC)
-    * [Flask](https://kyleeee.tistory.com/category/Flask)
-    * [FastAPI](https://kyleeee.tistory.com/category/FastAPI)
+* [정보처리기사](https://kyleeee.tistory.com/category/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC)
+* [Flask](https://kyleeee.tistory.com/category/Flask)
+* [FastAPI](https://kyleeee.tistory.com/category/FastAPI)
 ----
