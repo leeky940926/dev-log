@@ -5,6 +5,7 @@ https://kyleeee.tistory.com/
 
 ## Category
 * [Django](https://kyleeee.tistory.com/category/Django)
+    * [prefetch_related에서 to_attr로 DB Hits 줄이기](https://kyleeee.tistory.com/entry/TIL1-prefetchrelated%EC%97%90%EC%84%9C-toattr%EB%A1%9C-DB-Hits-%EC%A4%84%EC%9D%B4%EA%B8%B0)
 * [Database](https://kyleeee.tistory.com/category/Database)
 * [AWS](https://kyleeee.tistory.com/category/AWS)
 * [Git](https://kyleeee.tistory.com/category/Git)
