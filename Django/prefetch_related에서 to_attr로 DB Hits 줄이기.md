@@ -201,8 +201,8 @@ Goo에는 prefetch_goo_set 이라는 이름의 to_attr을, Dong에는 prefetch_d
 
 ```shell
 You can also assign the prefetched result to a custom attribute with the optional to_attr argument. The result will be stored directly in a list.
-to_attr을 이용하여 prefetch_related의 결과를 저장할 수 있다는 뜻이다.
 ```
+to_attr을 이용하여 prefetch_related의 결과를 저장할 수 있다는 뜻이다.
 
 
 이미 저장을 해놔서 굳이 DB Hits를 하지 않고 가져올 수 있게 된 것이다.
