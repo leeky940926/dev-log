@@ -1,6 +1,6 @@
 # 💻 Dev-log
 
-배우고, 나누고 싶은 것 뿐만 아니라 개발자로서 인생을 기록하는 곳입니다. <br>
+Django King이 될 개발자 이기용입니다. <br>
 https://kyleeee.tistory.com/
 
 ## Category
