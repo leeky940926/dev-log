@@ -1,3 +1,7 @@
+# prefetch_related에서 to_attr로 DB Hits 줄이기
+
+<br>
+
 ## Intro
 
 
