@@ -2,6 +2,10 @@
 
 # Git Flow
 
+<br>
+
+## Intro
+
 
 2021년 8월, 개발자의 꿈을 가지고 위코드에 처음 들어선 후 Git을 배울 때 add - commit - push - pull 이 순서가 Git Flow 인 줄 알았습니다.
 
