@@ -1,4 +1,4 @@
-# get_fieldname_display
+## Intro
 
 
 Django에서 모델링을 할 때, 보기 중 선택을 해야 하는 필드가 있을 수 있습니다.
