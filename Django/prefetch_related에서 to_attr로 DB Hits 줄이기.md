@@ -1,6 +1,7 @@
-모든 출처는 [공식문서](https://docs.djangoproject.com/en/4.0/ref/models/querysets/#prefetch-related)이다.
-
 ## Intro
+
+
+
 Django로 개발하는 사람이라면 N+1 Problem을 줄이기 위해 여러 노력들을 해봤을 것이다.
 
 
@@ -32,6 +33,10 @@ prefetch_related에서 조금 더 조건을 줄 때 Prefetch를 Import해서 사
 
 
 나는 공식문서의 Pizza, Topping이 아닌 주소의 시-구-동을 이용해서 이걸 해볼 것이다.
+
+<br>
+
+모든 출처는 [공식문서](https://docs.djangoproject.com/en/4.0/ref/models/querysets/#prefetch-related)이다.
 
 <br>
 
