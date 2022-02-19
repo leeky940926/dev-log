@@ -9,6 +9,7 @@ https://kyleeee.tistory.com/
     * [get_fieldname_display](https://github.com/leeky940926/dev-log/blob/main/Django/get_fieldname_display.md)
     * [aggregate/annotate(1/2)](https://github.com/leeky940926/dev-log/blob/main/Django/aggregate%26annotate(1of2).md)
     * [aggregate/annotate(2/2)](https://github.com/leeky940926/dev-log/blob/main/Django/aggregate%26annotate(2of2).md)
+    * [django polymorphic](https://github.com/leeky940926/dev-log/blob/main/Django/django%20polymorphic.md)
 * [Database](https://github.com/leeky940926/dev-log/tree/main/Database)
 * [AWS](https://github.com/leeky940926/dev-log/tree/main/AWS)
 * [Git](https://github.com/leeky940926/dev-log/tree/main/Git)
