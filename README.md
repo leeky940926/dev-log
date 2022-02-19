@@ -1,9 +1,11 @@
-# 💻 Dev-log
+## 💻 Dev-log
 
-Django King이 될 개발자 이기용입니다. <br>
-https://kyleeee.tistory.com/
 
-## Category
+Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) as a Django Developer <br>
+
+<br>
+
+## 📂 Category
 * [Django](https://github.com/leeky940926/dev-log/tree/main/Django)
     * [prefetch_related에서 to_attr로 DB Hits 줄이기](https://github.com/leeky940926/dev-log/blob/main/Django/prefetch_related%EC%97%90%EC%84%9C%20to_attr%EB%A1%9C%20DB%20Hits%20%EC%A4%84%EC%9D%B4%EA%B8%B0.md)
     * [get_fieldname_display](https://github.com/leeky940926/dev-log/blob/main/Django/get_fieldname_display.md)
