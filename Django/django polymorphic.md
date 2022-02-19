@@ -116,6 +116,24 @@ Instance_of 와 not_instance_of를 이용하여 결과를 특정 하위 모델�
 첫 번째 발생한 SQL에서 polymorphic_ctype_id는 django_content_type에 저장된 ID를 불러옵니다.
 
 
+왜 django_content_type의 id를 불러오냐면, import한 PolymorphicModel의 특성에 나와있습니다.
+
+![image](https://user-images.githubusercontent.com/88086271/154793151-18585bf0-ba36-4e8e-8c60-26898be335b4.png)
+
+
+Polymorphic모델로 타고 들어가면 모델에 polymorphic_ctype이라는 컬럼이 있고, ContentType이라는 모델을 참조합니다.
+
+ContentType으로 한 번 더 타고 들어가면 테이블명(db_table)이 django_content_type으로 설정되어 있는 걸 확인할 수 있습니다.
+
+
+
+이렇게 모델이 연결되어 있기 때문에 django_content_type의 ID를 불러오게 되는 것입니다.
+
+
+![image](https://user-images.githubusercontent.com/88086271/154793154-71204787-3e5b-4d39-be0f-0b7bc1af6f2d.png)
+
+
+
 
 그리고 제 DB에 저장된 django_content_type의 17번은 instance_of에 들어간  ArtProject입니다.
 
