@@ -18,6 +18,7 @@ https://kyleeee.tistory.com/
 * [CI&CD](https://github.com/leeky940926/dev-log/tree/main/CICD)
 * [Docker](https://github.com/leeky940926/dev-log/tree/main/Docker)
 * [Network](https://github.com/leeky940926/dev-log/tree/main/Network)
+* [CS](https://github.com/leeky940926/dev-log/tree/main/CS)
 * [정보처리기사](https://github.com/leeky940926/dev-log/tree/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC)
 * [Flask](https://github.com/leeky940926/dev-log/tree/main/Flask)
 * [FastAPI](https://github.com/leeky940926/dev-log/tree/main/FastAPI)
