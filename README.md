@@ -3,6 +3,13 @@
 
 Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) as a Django Developer <br>
 
+포스팅 글 관련해서 하실 말씀이 있으시다면
+
+1. leeky940926@gmail.com
+2. https://kyleeee.tistory.com/
+
+메일회신 혹은 티스토리에 댓글 부탁 드립니다!
+
 <br>
 
 ## 📂 Category
