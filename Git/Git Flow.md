@@ -1,6 +1,6 @@
-
-
 # Git Flow
+
+[티스토리 블로그 바로가기](https://kyleeee.tistory.com/entry/TIL2-Git-Flow)
 
 <br>
 
