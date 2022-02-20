@@ -1,5 +1,7 @@
 # Nested Function & decorator
 
+[티스토리 포스팅 바로가기](https://kyleeee.tistory.com/entry/TIL8-Nested-Function-decorator)
+
 <br>
 
 ##  Intro
