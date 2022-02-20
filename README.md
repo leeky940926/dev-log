@@ -13,6 +13,8 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
 <br>
 
 ## 📂 Category
+* [Python](https://github.com/leeky940926/dev-log/tree/main/Python)
+    * [Nested Function & decorator](https://github.com/leeky940926/dev-log/blob/main/Python/Nested%20Function%20&%20decorator.md) 
 * [Django](https://github.com/leeky940926/dev-log/tree/main/Django)
     * [prefetch_related에서 to_attr로 DB Hits 줄이기](https://github.com/leeky940926/dev-log/blob/main/Django/prefetch_related%EC%97%90%EC%84%9C%20to_attr%EB%A1%9C%20DB%20Hits%20%EC%A4%84%EC%9D%B4%EA%B8%B0.md)
     * [get_fieldname_display](https://github.com/leeky940926/dev-log/blob/main/Django/get_fieldname_display.md)
