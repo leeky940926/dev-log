@@ -1,5 +1,7 @@
 # get_fieldname_display
 
+[티스토리 블로그 바로가기](https://kyleeee.tistory.com/entry/TIL3-Django-getfieldnamedisplay?category=1055763)
+
 <br>
 
 ## Intro
