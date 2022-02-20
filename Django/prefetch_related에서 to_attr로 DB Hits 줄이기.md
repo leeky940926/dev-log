@@ -1,5 +1,7 @@
 # prefetch_related에서 to_attr로 DB Hits 줄이기
 
+[티스토리 블로그 바로가기](https://kyleeee.tistory.com/entry/TIL1-prefetchrelated%EC%97%90%EC%84%9C-toattr%EB%A1%9C-DB-Hits-%EC%A4%84%EC%9D%B4%EA%B8%B0)
+
 <br>
 
 ## Intro
