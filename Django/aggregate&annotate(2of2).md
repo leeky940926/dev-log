@@ -1,5 +1,9 @@
 # aggregate&annotate(2/2)
 
+[티스토리 블로그 바로가기](https://kyleeee.tistory.com/entry/TIL5-aggregateannotate22?category=1055763)
+
+
+
 <br>
 
 ## Intro
