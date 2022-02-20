@@ -1,5 +1,7 @@
 # django polymorphic
 
+[티스토리 블로그 바로가기](https://kyleeee.tistory.com/entry/TIL6-django-polymorphic?category=1055763)
+
 <br>
 
 ## Intro
