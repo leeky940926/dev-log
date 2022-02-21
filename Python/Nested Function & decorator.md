@@ -175,6 +175,9 @@ def get_stock_information():
 간단하게 이렇게 함수를 만들어보겠습니다.
 
 
+쉽게 하나의 함수로 묶을 수 있지만 데코레이터 사용을 위해 분리했습니다.
+
+
 
 이 정보는 아까 말했던 것처럼 내 고객에게만 말해야 하는데, 이 연결고리를 잊어먹지 않기 위해 강제적으로 유저를 식별해줄 수 있는 방법이 필요합니다.
 
@@ -233,7 +236,7 @@ def get_stock_information(*args ,**kwargs):
 
 
 
-wrapper라는 중첩함수에서 나의 고객이 맞으면 func(get_stock_information)을 리턴하도록 되어 있었고, get_stock_information을 까보니 "확인되었습니다. 제 고객이시군요"가 리턴된다고 나와 있습니다.
+wrapper라는 중첩함수에서 나의 고객이 맞으면 func인 get_stock_information을 리턴하도록 되어 있었고, get_stock_information을 까보니 "확인되었습니다. 제 고객이시군요"가 리턴된다고 나와 있습니다.
 
 
 
