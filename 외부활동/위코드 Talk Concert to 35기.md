@@ -1,3 +1,9 @@
+# 위코드 Talk Concert to 35기
+
+[티스토리 포스팅 바로가기](https://kyleeee.tistory.com/entry/%EC%9C%84%EC%BD%94%EB%93%9C-Talk-Concert-to-35%EA%B8%B0)
+
+<br>
+
 오늘은 위코드 Talk Concert가 있는 날이었습니다.
 
 
