@@ -27,7 +27,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
 * [AWS](https://github.com/leeky940926/dev-log/tree/main/AWS)
 * [Git](https://github.com/leeky940926/dev-log/tree/main/Git)
     * [Git Flow](https://github.com/leeky940926/dev-log/blob/main/Git/Git%20Flow.md)
-* [Nginx](https://github.com/leeky940926/dev-log/tree/main/Nginx)
+* [Server](https://github.com/leeky940926/dev-log/tree/main/Server)
 * [Web](https://github.com/leeky940926/dev-log/tree/main/Web)
 * [CI&CD](https://github.com/leeky940926/dev-log/tree/main/CICD)
 * [Docker](https://github.com/leeky940926/dev-log/tree/main/Docker)
