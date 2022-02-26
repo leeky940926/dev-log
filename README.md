@@ -29,6 +29,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
 * [Git](https://github.com/leeky940926/dev-log/tree/main/Git)
     * [Git Flow](https://github.com/leeky940926/dev-log/blob/main/Git/Git%20Flow.md)
 * [Server](https://github.com/leeky940926/dev-log/tree/main/Server)
+    * [서버기반인증과 토큰기반인증](https://github.com/leeky940926/dev-log/blob/main/Server/서버기반인증과%20토큰기반인증.md)
 * [Web](https://github.com/leeky940926/dev-log/tree/main/Web)
 * [CI&CD](https://github.com/leeky940926/dev-log/tree/main/CICD)
 * [Docker](https://github.com/leeky940926/dev-log/tree/main/Docker)
