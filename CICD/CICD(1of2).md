@@ -11,7 +11,7 @@ CI/CD는 애플리케이션 개발 단계를 자동화하여 애플리케이션�
 CI/CD는 새로운 코드 통합으로 인해 개발 및 운영팀에 발생하는 문제를 해결하기 위한 솔루션이며, 애플리케이션의 통합 및 테스트 단계에서부터 제공 및 배포에 이르는 라이프사이클 전체에 걸쳐 지속적인 자동화와 지속적인 모니터링을 제공합니다.
 이러한 구축사례를 일반적으로 CI/CD 파이프라인 이라고 부릅니다.
 
-이번 글은 [RedHa](https://www.redhat.com/ko/topics/devops/what-is-ci-cd)t을 참조하여 작성했습니다.
+이번 글은 [RedHa](https://www.redhat.com/ko/topics/devops/what-is-ci-cd)t을 참고하여 작성했습니다.
 
 <br>
 
