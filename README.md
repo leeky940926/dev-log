@@ -33,7 +33,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
 * [Web](https://github.com/leeky940926/dev-log/tree/main/Web)
 * [CI&CD](https://github.com/leeky940926/dev-log/tree/main/CICD)
     * [CI](https://github.com/leeky940926/dev-log/blob/main/CICD/CICD(1of2).md)
-    * [CD]()
+    * [CD](https://github.com/leeky940926/dev-log/blob/main/CICD/CICD(2of2).md)
     * [Jenkins(추후 작성)]()
 * [Docker](https://github.com/leeky940926/dev-log/tree/main/Docker)
 * [Network](https://github.com/leeky940926/dev-log/tree/main/Network)
