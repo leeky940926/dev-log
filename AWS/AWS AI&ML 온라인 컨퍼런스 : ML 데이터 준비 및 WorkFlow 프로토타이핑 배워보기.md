@@ -1,5 +1,7 @@
 # AWS AI&ML 온라인 컨퍼런스 : ML 데이터 준비 및 WorkFlow 프로토타이핑 배워보기
 
+[티스토리 포스팅 바로가기](https://kyleeee.tistory.com/entry/AWS-AIML-온라인-컨퍼런스-ML-데이터-준비-및-WorkFlow-프로토타이핑-배워보기)
+
 <br>
 
 
