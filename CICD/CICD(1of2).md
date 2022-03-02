@@ -44,13 +44,13 @@ CI의 workflow는 사용 툴, 프로그래밍 언어, 프로젝트와 그 외 �
 
 각 단계에 대해 설명을 해보자면
 
-* Push Code Repository
+* Push Code Repository <br>
 우리의 Repository에 commit-push를 하는 것을 의미합니다. workflow에서 commit을 하는 것부터 CI의 시작이기 때문입니다.
 
-* Static analysis
+* Static analysis <br>
 Static analysis는 소프트웨어를 시작할 필요 없이 애플리케이션의 기본 코드로부터 행해집니다. Static analysis의 목표는 코드가 버그 발생할 가능성이 없다는 것을 증명하는 것과 표준 형태와 스타일을 확정 짓는 것입니다. RedHat에서는 FIndBugs라는 프로그램을 설치해서 보여주는 것까지 있는데, 자바 기반인 점과 개념에 대해 알고가려는 포스팅이어서 생략하겠습니다. 읽어보니 배포 전 테스트에 관한 내용은 Pre-deployment testing에 대한 부분도 있으며, 시간 나실 때 읽어보시는 것도 추천드립니다.
 
-* Packaging and deployment to the test environment
+* Packaging and deployment to the test environment <br>
 프로젝트 종류에 따라, 애플리케이션이 빌드, 패키징, 테스트 또는 스테이징 환경으로 전송됩니다. 이렇게 하면 통합된 변경 사항이 다른 코드들과 잘 합쳐져서 기능 테스트를 수행할 수 있도록 배포 될 수 있습니다. 애플리케이션을 배포해야 하는 테스트의 경우, CI 파이프라인에서 테스트가 실행됩니다. 테스트는 사용 툴, 프레임워크와 언어 등에 따라 다르지만 대체로 기능 테스트이며 퍼포먼스 테스트입니다. 이게 성공적으로 종료된다면 유저들에게 만족을 줄 수 있게 되는 것입니다. 또한 애플리케이션은 사용자 또는 QA팀의 수동 테스트를 거쳐 클라이언트의 요구사항에 맞는지 확인할 수 있습니다. 그 결과 Production으로 배포할 수 있게 되고 성공적인 CI를 도입했다고 말 할 수 있게 되는 것입니다.
 
 <br>
