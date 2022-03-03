@@ -91,6 +91,16 @@ class SiginInView(View):
 ```
 <br>
 
+다만, 이 경우는 try-except를 하지 않을 경우 추천하는 방법이고, 일반적으로 우리는 try-except를 통해 코드를 작성하기 때문에 try 내부 구문에 transaction.atomic을 설정하는 것이 더 권장드리는 방법입니다.
+
+[공식문서](https://docs.djangoproject.com/ko/4.0/topics/db/transactions/)에 따르면 정상적으로 종료됐는지 파악하여 Commit, Rollback 중 액션을 정한다고 합니다. 그런데 transaction 내부에서 try-except를 설정해버린다면 문제가 발생했을 때 잡아내지 못 하는 경우가 발생하여 예기치 않은 동작까지 발생하게 됩니다. 그래서 오류를 잡는 올바른 방법은 transaction을 구간별로 걸어주는 걸 Django에서는 권장하고 있습니다. 아래 이미지는 제가 바로 위에 작성한 내용에 대한 공식문서 글입니다. 
+
+<br>
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdvX6CI%2FbtruRMTOdbi%2F2ILUeflZEg9TZOaP2fgYZ0%2Fimg.png)
+ 
+<br>
+
 ## ✔️ 마치며..
 
 이상 2일에 걸쳐 트랜잭션에 대해 알아봤습니다.
