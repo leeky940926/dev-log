@@ -29,6 +29,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
     * [AWS AI&ML 온라인 컨퍼런스 : ML 데이터 준비 및 WorkFlow 프로토타이핑 배워보기](https://github.com/leeky940926/dev-log/blob/main/AWS/AWS%20AI&ML%20온라인%20컨퍼런스%20:%20ML%20데이터%20준비%20및%20WorkFlow%20프로토타이핑%20배워보기.md)
 * [Git](https://github.com/leeky940926/dev-log/tree/main/Git)
     * [Git Flow](https://github.com/leeky940926/dev-log/blob/main/Git/Git%20Flow.md)
+    * [GIT SSH정의부터 Clone까지](https://github.com/leeky940926/dev-log/blob/main/Git/Git%20SSH정의부터%20Clone까지.md)
 * [Server](https://github.com/leeky940926/dev-log/tree/main/Server)
     * [서버기반인증과 토큰기반인증](https://github.com/leeky940926/dev-log/blob/main/Server/서버기반인증과%20토큰기반인증.md)
 * [CI&CD](https://github.com/leeky940926/dev-log/tree/main/CICD)
