@@ -41,7 +41,6 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
 * [CS](https://github.com/leeky940926/dev-log/tree/main/CS)
 * [Life](https://github.com/leeky940926/dev-log/tree/main/Life)
    * [위코드 Talk Concert to 35기](https://github.com/leeky940926/dev-log/blob/main/Life/위코드%20Talk%20Concert%20to%2035기.md) 
-* [정보처리기사](https://github.com/leeky940926/dev-log/tree/main/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC)
 * [Flask](https://github.com/leeky940926/dev-log/tree/main/Flask)
 * [FastAPI](https://github.com/leeky940926/dev-log/tree/main/FastAPI)
 ----
