@@ -102,3 +102,41 @@ include를 선언하면, 그 필드만 선택하고 인덱싱 필드로만 필�
 Index(name='covering_index', fields=['headline'], include=['pub_date'])
 ```
 이렇게 되면 인덱스에서 데이터를 가져오는 동안 headline에서 필터링하고 pub_date도 선택할 수 있습니다. 쉽게 말해 인덱스안의 작은 인덱스를 하나 더 설정할 수 있게 됩니다. 다만, 정렬이나 필터링은 할 수 없습니다. 정렬 및 필터링이 headline으로는 가능하나 pub_date로는 안된다는 의미입니다. 
+
+<br>
+
+## ✔️과연 얼마나 유의미한 차이가 날까?
+
+우선 저는 아래와 같이 모델을 만들고 100만개의 데이터를 넣었습니다. 그리고 데이터의 정확성을 위해 first_name과 last_name 모두 같은 값을 넣었습니다. first_name이 ky면 last_name도 ky가 되는 형식의 데이터들입니다. 그리고 first_name에만 index 설정을 했습니다.
+```python
+from django.db import models
+
+class Customer(models.Model):
+    first_name = models.CharField(max_length=20)
+    last_name = models.CharField(max_length=20)
+    
+    class Meta:
+        indexes = [
+            models.Index(fields=['first_name'], name='first_name_idx'),
+        ]
+```
+이 때, first_name과 last_name에서 대소문자 구분없이 a가 들어가는 거의 개수를 구해보겠습니다.
+<br>
+```python
+class IndexFirstNameView(View):
+    def get(self, request, *args, **kwargs):
+        
+        c = Customer.objects.filter(first_name__icontains="a")
+        d = Customer.objects.filter(last_name__icontains="a")
+        
+        return JsonResponse({"count":c.count()}, status=200)
+```
+그래서 첫 번째로 first_name에 a가 들어간 거의 개수를 구해보고, 그 다음 last_name에 a가 들어간 것의 개수를 구해보며 응답속도를 측정해보겠습니다. 첫 번째 사진이 c의 개수, 두 번째 사진이 d의 개수를 구할 때의 응답속도가 나오는 이미지입니다.
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fodfy0%2Fbtru8UQUEIU%2FdrXNj8WGrmP4hHUV9JQiF1%2Fimg.png)
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvyS4O%2FbtrveK67JeC%2FKRoLc3CSHsGRU8jkZPkxs1%2Fimg.png)
+
+<br>
+첫 번째 이미지를 보시면 인덱스를 설정한 first_name의 개수를 구하는 Time은 98ms가 나오며 계속 요청을 보낸 결과 대략 80~90을 왔다갔다 하는 결과가 나왔습니다. 그리고 인덱스가 설정되지 않은 last_name의 개수를 구하는 Time은 136ms가 나오며 130~140을 왔다갔다 합니다. 인덱싱을 통해 이렇게 유의미한 결과를 나타낼 수 있었습니다. 
+<br>
+다만, 항상 Indexing이 능사는 아닙니다. 필요한 상황이 있을터이니 그 때 알맞게 설정해보는 걸 권장드립니다.
