@@ -1,11 +1,11 @@
 # TDD
-[티스토리 포스팅 바로가기]()
+[티스토리 포스팅 바로가기](https://kyleeee.tistory.com/entry/TIL15-TDD)
 
 <br>
 
 ## ✔️Intro
 
-오늘은 TDD(Test-Driven-Development, 테스트 주도 개발)에 대해 포스팅해보겠습니다. 저희 회사에서도 서버 개발팀 방향성에 포함된 것 중 하나가 테스트 코드를 통한 테스트 방법 개선이고, 저 역시 프로젝트를 해보며 Unit Test를 하다 보니 테스트 코드를 작성해놓는 것에 대한 중요성을 알고 있었습니다. 그래서 TDD에 대한 간단한 설명과 Django에서 사용하는 Pytest를 이용해 Unit Test를 진행해보겠습니다. 
+오늘은 TDD(Test-Driven-Development, 테스트 주도 개발)에 대해 포스팅해보겠습니다. 저희 회사에서도 서버 개발팀 방향성에 포함된 것 중 하나가 테스트 코드를 통한 테스트 방법 개선이고, 저 역시 프로젝트를 해보며 Unit Test를 하다 보니 테스트 코드를 작성해놓는 것에 대한 중요성을 알고 있었습니다. 그래서 TDD에 대한 간단한 설명과 Django의 [공식문서](https://docs.djangoproject.com/ko/4.0/topics/testing/overview/)를 보고 Unit Test를 진행해보겠습니다. 
 
 <br>
 
@@ -51,4 +51,202 @@ TDD를 쉽게 표현하면 위 그림과 같습니다.
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdxmvu3%2FbtrvhNCV8et%2FbzU1pt2lFBySkFhaJMW5kk%2Fimg.png)
 
-이렇게 TDD에 대해 알아보았으니, Django에서 Pytest를 이용해 테스트를 해보겠습니다.
+이렇게 TDD에 대해 알아보았으니, Django에서 테스트를 해보겠습니다.
+
+<br>
+
+## ✔️Unit Test In Django
+
+우선 테스트를 하기 위해 모델링과 View로직을 먼저 작성하겠습니다.
+```python
+from django.db import models
+
+
+class Role(models.Model):
+    name = models.CharField(max_length=20)
+
+
+class User(models.Model):
+    role = models.ForeignKey('tdds.Role', on_delete=models.CASCADE)
+    nickname = models.CharField(max_length=20, unique=True)
+    password = models.CharField(max_length=500)
+```
+<br>
+
+우선, 유저라는 모델을 만드는데 유저별로 역할을 부여하기 위해 Role, User를 만들었습니다. 그리고 Role을 User가 참조합니다.
+그리고 nickname은 unique=True를 설정했습니다.
+
+```python
+class SignUpView(View):
+    def post(self, request, *args, **kwargs):
+        try:
+            with transaction.atomic():
+                data = json.loads(self.request.body)
+                
+                role_id = data["role_id"]
+                nickname = data["nickname"]
+                password = data["password"]
+                password = bcrypt.hashpw(
+                    password=password.encode('utf-8'), 
+                    salt=bcrypt.gensalt())                
+                
+                if not Role.objects.filter(id=role_id).exists():
+                    return JsonResponse({'message':'ROLE_DOES_NOT_EXIST'}, status=500)
+                
+                if User.objects.filter(nickname=nickname).exists():
+                    return JsonResponse({'meesage':'NICKNAME_ALREADY_EXIST'}, status=500)
+                
+                User.objects.create(
+                    role_id=role_id,
+                    nickname=nickname,
+                    password=password
+                )
+        
+        except KeyError:
+            return JsonResponse({'meesage':'KEY_ERROR'}, status=500)
+        
+        else:
+            return JsonResponse({'message':'CREATE_USER'}, status=201)
+    
+
+class UserListView(View):
+    def get(self, request, *args, **kwargs):
+        users = User.objects.select_related('role').all()
+        user_list = [
+            {"id":user.id,
+             "role":user.role.name,
+             "nickname":user.nickname}
+            for user in users]
+        return JsonResponse({'user_list':user_list}, status=200)
+```
+<br>
+
+View의 경우, 회원가입을 위한 SignUpView와 유저 리스트를 보기 위한 UserListView를 작성했습니다.
+
+회원가입의 경우,  body로 role_id와 nickname, password를 받으며, 비밀번호 암호화의 경우 Bcrypt를 이용했습니다. PBKDF2의 경우 Django에서 제공하는 User를 사용해야 하는데, 저는 커스터마이즈해서 모델을 만들었기 때문입니다. 그래서 role_id를 받았는데 해당 ID가 DB에 없을 때 RoleDoesNotExist 에러가 발생하는 걸 핸들링했고, unique=True인 nickname이 DB에 있는 경우 Integrity Error가 발생하는 걸 핸들링하기 위해 Already Exist 에러를 설정했습니다. 그리고 Body에 role_id, nickname, password 하나라도 없을 시 KeyError가 발생합니다.
+
+유저리스트의 경우, User가 Role을 정참조하기 때문에 select_related를 사용했고 클라이언트에 id, role의 name, nickname을 담은 유저정보를 리턴하도록 했습니다.
+
+그리고 이 두 개의 API를 테스트 하기 위한 코드입니다.
+
+```python
+import bcrypt
+from django.test.testcases import TestCase
+from django.test.client import Client
+from tdds.models import Role, User
+
+
+class TestUser(TestCase):
+    def setUp(self):
+        self.client = Client()
+        
+        role1 = Role.objects.create(id=1, name="admin1")
+        role2 = Role.objects.create(id=2, name="normal1")
+        
+        User.objects.create(
+            role=role1, 
+            nickname='kylee1', 
+            password=bcrypt.hashpw("1234".encode('utf-8'), bcrypt.gensalt())
+        )
+        User.objects.create(
+            role=role2, 
+            nickname='kylee2', 
+            password=bcrypt.hashpw("1234".encode('utf-8'), bcrypt.gensalt())
+        )
+    
+    
+    def tearDown(self):
+        Role.objects.all().delete()
+        User.objects.all().delete()
+        
+    
+    def test_success_create_user(self):
+        
+        data = {
+            "role_id":1,
+            "nickname" : "kylee3",
+            "password" : "1234"
+        }
+        
+        response = self.client.post(
+            "/tdds/signup", 
+            data=data, 
+            content_type='application/json')
+        
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(response.json(), {'message':'CREATE_ROLE'})
+    
+    
+    def test_failure_create_user_raise_role_does_not_exist(self):
+        
+        data = {
+            "role_id":100,
+            "nickname" : "kylee3",
+            "password" : "1234"
+        }
+        
+        response = self.client.post(
+            "/tdds/signup", 
+            data=data, 
+            content_type='application/json')
+        
+        assert response.status_code == 500
+        assert response.json() == {'message':'ROLE_DOES_NOT_EXIST'}
+    
+    
+    def test_failure_create_user_raise_nickname_already_exist(self):
+        
+        data = {
+            "role_id":1,
+            "nickname" : "kylee1",
+            "password" : "1234"
+        }
+        
+        response = self.client.post(
+            "/tdds/signup", 
+            data=data, 
+            content_type='application/json')
+        
+        assert response.status_code == 500
+        assert response.json() == {'meesage':'NICKNAME_ALREADY_EXIST'}
+
+    
+    def test_success_get_user_list(self):
+        
+        response = self.client.get("/tdds/users")
+        
+        self.assertEqual(response.status_code , 200)
+        self.assertEqual(response.json() , 
+            {"user_list":[
+                {
+                    "id":8,
+                    "role":"admin1",
+                    "nickname":"kylee1"
+                },
+                {
+                    "id":9,
+                    "role":"normal1",
+                    "nickname":"kylee2"
+                }
+        ]})
+```
+테스트를 하기 위한 TestUser라는 이름의 클래스를 만들고 TestCase를 상속받았습니다. TestCase와 TransactionTestCase 두 개를 상속받을 수 있는데, TransactionTestCase는 select_for_update같이 락을 걸어야 할 사항이 있을 때 사용한다고 합니다. 
+
+setUp에선 초기값을 세팅하고, tearDown은 만든 초기값을 삭제합니다. MySQL을 사용할 땐 테스트 데이터마다 ID를 만들었는데 PostgreSQL은 테스트 메소드마다 ID를 자동으로 생성해줍니다. 그래서 초기값 세팅 때 유저ID가 1,2로 세팅되고 test_success_create_user 테스트 때 setUp이 실행돼서 ID가 3번으로 만들어집니다. 그리고  test_failure_create_user_raise_role_does_not_exist 테스트 때 setUp이 실행돼서 ID가 4,5번으로 세팅되었다가 삭제되고, test_failure_create_user_raise_nickname_already_exist 때 한 번 더 실행돼서 6,7번으로 세팅되었다가 삭제돼서 get으로 불러올 때 8,9번으로 세팅돼서 저장이 됩니다. Unit Test에서 PostgreSQL의 ID체계가 많이 복잡합니다. 그리고 데이터가 tearDown으로 삭제되며 test_success_create_user에서 만든 게 함께 삭제되는 것입니다.
+
+그래서 client가 http method와 함께 보낸 응답의 결과가 reponse에 저장되는데, 비교 방법이 두 가지 있습니다.
+assert를 쓰거나 self.assertEqual을 사용하는 것입니다. 저는 개인적으로 self.assertEqual이 틀린 부분을 집어줘서 후자를 애용합니다. 첫 번째 사진이 assert를 이용했을 때고 self.assertEqual이 두 번째 사진입니다.
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvDwfx%2FbtrvcGkGzxw%2F3Xbvkpx3FB4SMnuP2AJzFK%2Fimg.png)
+
+<br>
+<br>
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FMVQ7d%2Fbtru9pJIL8r%2FsS31zqah9i6F3ICftjQn30%2Fimg.png)
+
+
+<br>
+
+## ✔️마치며..
+
+Unit Test가 DB마다 방법이 약간씩 다르다보니 헷갈리는 부분도 많으니, 꼭 공식문서 잘 참고하셔서 해야 합니다. 그리고 생각보다 테스트코드가 작성하는 게 까다로우니 계속 연습해보면서 숙지하시길 권장드립니다.
