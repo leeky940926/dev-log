@@ -41,6 +41,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
     * [TDD](https://github.com/leeky940926/dev-log/blob/main/CS/TDD.md)
     * [Pattern](https://github.com/leeky940926/dev-log/blob/main/CS/Pattern.md)
     * [CORS](https://github.com/leeky940926/dev-log/blob/main/CS/CORS.md)
+    * [Race Condition (Feat. Transaction)](https://github.com/leeky940926/dev-log/blob/main/CS/Race%20Condition%20(Feat.%20Transaction).md)
 * [Life](https://github.com/leeky940926/dev-log/tree/main/Life)
    * [위코드 Talk Concert to 35기](https://github.com/leeky940926/dev-log/blob/main/Life/위코드%20Talk%20Concert%20to%2035기.md) 
 * [FastAPI](https://github.com/leeky940926/dev-log/tree/main/FastAPI)
