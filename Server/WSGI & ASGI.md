@@ -35,7 +35,7 @@ Asynchronous Server Gateway Interface의 약자로 비동기 가능한 Python �
 
 쉽게 말해, WSGI에서는 지원하지 않았던 비동기에 대해서도 가능하게 해준다는 의미이며, Uvicorn을 설치하여 실행합니다.
 
-WSGI-Nginx와 ASGI-Uvicorn 배포와 Celery와 async 함수를 이용한 비동기처리에 대해 해보겠습니다.
+gunicorn과 ASGI-Uvicorn 배포와 Celery와 async 함수를 이용한 비동기처리에 대해 해보겠습니다.
 
 <br>
 
@@ -51,6 +51,32 @@ WSGI-Nginx와 ASGI-Uvicorn 배포와 Celery와 async 함수를 이용한 비동�
 
 ## ✔️uWSGI와 Django
 
+[Django 공식문서](https://docs.djangoproject.com/ko/3.2/howto/deployment/wsgi/gunicorn/)에는 gunicorn과 Django를 사용하는 방법이 대해 나와있습니다.
+
+Gunicorn이란, wsgi.py를 호출하기 위해선 WSGI 서버가 필요한데, 이 서버 역할을 해주는 웹 서버입니다.
+
+우선, gunicorn을 설치합니다
+```shell
+pip install gunicorn
+```
+
+그리고 아래 명령어를 입력하여 Gunicorn에서 Django를 실행합니다.
+
+```shell
+gunicorn projectname.wsgi
+```
+
+실행했다면, URL을 입력하여 서버가 잘켜졌는지 테스트해봅니다. projectname은 내가 처음 Django 프로젝트를 만들 때 시작한 이름을 써주시면 됩니다. 저는 blogs라고 시작했습니다. 이렇게 설정하고 URL을 입력했을 때 잘 작동되면 성공입니다.
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcnlsa9%2Fbtrv6j1OgoN%2FTbpLe7dBd0nTjrEeydgKhk%2Fimg.png)
+
+아니면 다른 명령어를 사용해도 됩니다.
+
+```shell
+gunicorn projectname.wsgi:application -- bind 0:8000
+```
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcFp7mi%2Fbtrv3f0qqVo%2FIc0vDhD20dmXeLZSn0MhL0%2Fimg.png)
 
 <br>
 
