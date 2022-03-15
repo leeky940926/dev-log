@@ -49,7 +49,7 @@ gunicorn과 ASGI-Uvicorn 배포와 Celery와 async 함수를 이용한 비동기
 
 <br>
 
-## ✔️uWSGI와 Django
+## ✔️Gunicorn with Django
 
 [Django 공식문서](https://docs.djangoproject.com/ko/3.2/howto/deployment/wsgi/gunicorn/)에는 gunicorn과 Django를 사용하는 방법이 대해 나와있습니다.
 
