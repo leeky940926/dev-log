@@ -105,8 +105,5 @@ projectname에는 Django 프로젝트를 시작할 때 만든 프로젝트명을
 
 <br>
 
-## ✔️ Django Celery
-
-<br>
 
 ## ✔️ async & uvloop
