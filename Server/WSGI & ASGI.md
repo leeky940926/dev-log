@@ -35,7 +35,7 @@ Asynchronous Server Gateway Interface의 약자로 비동기 가능한 Python �
 
 쉽게 말해, WSGI에서는 지원하지 않았던 비동기에 대해서도 가능하게 해준다는 의미이며, Uvicorn을 설치하여 실행합니다.
 
-gunicorn과 ASGI-Uvicorn 배포와 async, uvloop 함수를 이용한 비동기처리에 대해 해보겠습니다.
+gunicorn과 ASGI-Uvicorn 배포에 대해 해보겠습니다.
 
 <br>
 
@@ -105,5 +105,3 @@ projectname에는 Django 프로젝트를 시작할 때 만든 프로젝트명을
 
 <br>
 
-
-## ✔️ async & uvloop
