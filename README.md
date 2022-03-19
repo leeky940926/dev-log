@@ -24,6 +24,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
     * [PBKDF2](https://github.com/leeky940926/dev-log/blob/main/Django/PBKDF2.md)
     * [Django Cache](https://github.com/leeky940926/dev-log/blob/main/Django/Django%20Cache.md)
     * [Django Channels Tutorial 1](https://github.com/leeky940926/dev-log/blob/main/Django/Django%20Channels%20Tutorial%20Part%201.md)
+    * [Django Channels Tutorial 2&3](https://github.com/leeky940926/dev-log/blob/main/Django/Django%20Channels%20Tutorial%20Part%202%20%26%203.md)
 * [Database](https://github.com/leeky940926/dev-log/tree/main/Database)
     * [Transaction(1/2)](https://github.com/leeky940926/dev-log/blob/main/Database/Transaction(1of2).md) 
     * [Transaction(2/2)](https://github.com/leeky940926/dev-log/blob/main/Database/Transaction(2of2).md)
