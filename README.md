@@ -46,6 +46,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
     * [Pattern](https://github.com/leeky940926/dev-log/blob/main/CS/Pattern.md)
     * [CORS](https://github.com/leeky940926/dev-log/blob/main/CS/CORS.md)
     * [Race Condition (Feat. Transaction)](https://github.com/leeky940926/dev-log/blob/main/CS/Race%20Condition%20(Feat.%20Transaction).md)
+    * [일관성 있는 웹 서비스 인터페이스 설계를 위한 REST API 디자인 규칙](https://github.com/leeky940926/dev-log/blob/main/CS/일관성%20있는%20웹%20서비스%20인터페이스%20설계를%20위한%20REST%20API%20디자인%20규칙.md)
 * [Life](https://github.com/leeky940926/dev-log/tree/main/Life)
    * [위코드 Talk Concert to 35기](https://github.com/leeky940926/dev-log/blob/main/Life/위코드%20Talk%20Concert%20to%2035기.md) 
 * [FastAPI](https://github.com/leeky940926/dev-log/tree/main/FastAPI)
