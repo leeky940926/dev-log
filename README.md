@@ -54,4 +54,5 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
 * [Algorithms](https://github.com/leeky940926/dev-log/tree/main/Algorithms)
     * [백준 2839](https://github.com/leeky940926/dev-log/blob/main/Algorithms/백준%202839.md)
     * [백준 11399](https://github.com/leeky940926/dev-log/blob/main/Algorithms/백준%2011399.md)
+    * [백준 11047](https://github.com/leeky940926/dev-log/blob/main/Algorithms/백준%2011047.md)
 ----
