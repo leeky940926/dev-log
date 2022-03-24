@@ -52,7 +52,9 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
 * [FastAPI](https://github.com/leeky940926/dev-log/tree/main/FastAPI)
 * [Docker](https://github.com/leeky940926/dev-log/tree/main/Docker)
 * [Algorithms](https://github.com/leeky940926/dev-log/tree/main/Algorithms)
+    * [백준 1931](https://github.com/leeky940926/dev-log/blob/main/Algorithms/백준%201931.md)
     * [백준 2839](https://github.com/leeky940926/dev-log/blob/main/Algorithms/백준%202839.md)
-    * [백준 11399](https://github.com/leeky940926/dev-log/blob/main/Algorithms/백준%2011399.md)
     * [백준 11047](https://github.com/leeky940926/dev-log/blob/main/Algorithms/백준%2011047.md)
+    * [백준 11399](https://github.com/leeky940926/dev-log/blob/main/Algorithms/백준%2011399.md)
+
 ----
