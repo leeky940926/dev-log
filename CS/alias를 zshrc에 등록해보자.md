@@ -17,7 +17,9 @@ alias 등록하러 바로 슈웃
 vi ~/.zshrc
 ```
 
-mdmy접속 후 쭉 내려보면 ohmyzsh, zshconfig의 alias 예시가 보일겁니다.
+접속 후 쭉 내려보면 ohmyzsh, zshconfig의 alias 예시가 보일겁니다.
+
+없어도 당황하지 마시고, 그냥 없는갑다 하시면 됩니다.
 
 <br>
 
