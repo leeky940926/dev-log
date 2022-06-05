@@ -1,5 +1,7 @@
 # ✔️ Docker 구조
 
+[티스토리 바로가기](https://kyleeee.tistory.com/entry/TIL24-Docker-2-Docker-구조?category=1055770)
+
 <br>
 
 도커는 크게 4가지로 분류되어 있습니다.
