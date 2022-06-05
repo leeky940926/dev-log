@@ -1,5 +1,7 @@
 # DRF APITestCase
 
+[티스토리 바로가기](https://kyleeee.tistory.com/entry/TIL25-APITestCase)
+
 
 Django에서 기본적으로 TestCase를 이용해 테스트를 할 수 있도록 제공하는 [Unit Test](https://docs.djangoproject.com/en/4.0/topics/testing/overview/)가 있지만, DRF에서는 그에 상응하는(?) 기능으로 APITestCase가 있습니다.
 
