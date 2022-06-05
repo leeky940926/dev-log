@@ -1,5 +1,9 @@
 # alias를 zshrc에 등록해보자
 
+[티스토리 바로가기](https://kyleeee.tistory.com/entry/alias를-zshrc에-등록해보자)
+
+<br>
+
 
 카테고리를 뭘로 설정해야 할 지 몰라 CS로 했습니다..
 
