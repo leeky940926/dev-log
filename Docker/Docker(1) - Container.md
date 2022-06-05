@@ -1,5 +1,7 @@
 # Docker
 
+[티스토리 바로가기](https://kyleeee.tistory.com/entry/TIL24-Docker-1-Container?category=1055770)
+
 <br>
 
 도커를 하기 전에 컨테이너에 대한 이해가 선행되어야 합니다. 
