@@ -1,5 +1,9 @@
 # drf-yasg
 
+[티스토리 바로가기](https://kyleeee.tistory.com/entry/TIL26-drf-yasg)
+
+<br>
+
 저는 이전까지 API문서화의 경우, Postman을 주로 사용했었습니다. 
 
 혼자 틈틈히 FastAPI를 할 때 Swagger라는 것에 대해 알게 되었고, 지금 회사에 들어가고 나서는 swagger를 사용해서 본격적으로 사용하게 되었는데요.
