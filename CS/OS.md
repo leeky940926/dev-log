@@ -1,6 +1,6 @@
 # OS
 
-[티스토리 바로가기]()
+[티스토리 바로가기](https://kyleeee.tistory.com/entry/TIL28-OS)
 
 <br>
 
