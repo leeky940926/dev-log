@@ -4,6 +4,8 @@
 
 그냥 Celery설정 후 돌리는 것보다 이게 어떤건지 그 내부를 알고 싶어서 작성하게 되었습니다.
 
+개인적으로 실행을 해보며 작업 돌아가는 건 본 상태라 개념적으로 접근하려고 합니다.
+
 모든 출처는 [Celery 공식문서](https://docs.celeryq.dev/en/stable/index.html)입니다.
 
 <br>
@@ -87,6 +89,16 @@ app.autodiscover_tasks()
 
 Celery를 import한 후, app 설정을 해주면 됩니다.
 
+그리고 ```config_from_object```는 [Celery 관련 설정](https://docs.celeryq.dev/en/stable/userguide/configuration.html#configuration)에 대해 읽어오기 위해 사용하는 메소드입니다.
+
+CELERY로 시작하는 설정에 대해 읽어온 후 적용하겠다는 의미입니다.
+
+```autodiscover_tasks```는 모든 앱 내에서 설정된 tasks.py 모듈을 찾아내는 메소드입니다.
+
+```Searches a list of packages for a "tasks.py" module```
+
+파라미터 없이 설정하면 Django에 위임합니다. 특정앱을 지정할꺼면 ['app_name1', 'app_name2'] 이렇게 리스트형태로 설정해주면 됩니다.
+
 그리고 설정해줬다면 Celery를 설정할 함수에 데코레이터를 붙여주면 됩니다
 
 ```python
@@ -97,5 +109,28 @@ def debug_task(self):
 
 이렇게 task라는 메소드를 가져온 뒤, kwargs형태로 bind=True를 설정해주면 됩니다.
 
+bind=True는 3.1버전에 새로 생긴 옵션이며, 작업 인스턴스를 쉽게 참조한다고 합니다.
+
 <br>
 
+## Celery Options
+
+3.1버전에 추가된 bind=True에 대해서, [bound tasks](https://docs.celeryq.dev/en/latest/userguide/tasks.html#bound-tasks)라는 내용이 공식문서에 작성되어있습니다.
+
+bind=True가 설정된 메소드의 경우, self를 항상 설정해줘야 합니다.
+
+즉, 해당 메소드는 Celery 작업 인스턴스라는 걸 선언한다는 의미로 생각하면 될 것 같습니다.
+
+그리고 작업 인스턴스가 여러 이유로 중간에 끊길 수도 있습니다.
+
+현재 제가 작업하는 것에 대해 예를 들면, 시간표 데이터는 [나이스 오픈 API](https://open.neis.go.kr/portal/mainPage.do)를 통해 수집하는데 나이스에 요청을 보내는 과정에서 작업이 끊길 수 있습니다.
+
+그럴 경우, 작업이 다시 실행되도록 설정해야 하며 그 때 [retry 옵션](https://docs.celeryq.dev/en/latest/reference/celery.app.task.html#celery.app.task.Task.retry)을 설정해야 합니다.
+
+<br>
+
+## Outro
+
+이정도가 제가 현재 작업하고 있는 사항에 대한 내용입니다.
+
+Celery 내부 기능에 대해 더 사용할 일이 있으면 그 때 새롭게 포스팅 하겠습니다.
