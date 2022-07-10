@@ -1,10 +1,15 @@
 # CSV
 
+[티스토리 포스팅 바로가기](https://kyleeee.tistory.com/entry/TIL30-CSV파일-만들기Using-Python)
+
+<br>
+
 Celery에 이어서 추가 내용인데, 수집한 데이터를 CSV 파일로 만든 뒤 S3에 저장하고 있습니다.
 
 그 다음 데이터베이스에 저장하는 과정을 통해 앱 이용자들에게 정보를 제공합니다.
 
 [나이스 오픈 API](https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN14020190311111456561190&infSeq=2)에서 경기도 내에 있는 외국어 고등학교에 존재하는 학과 리스트들을 csv 파일로 만드는 과정에 대해 포스팅 해보겠습니다.
+
 
 <br>
 
@@ -78,6 +83,7 @@ responses는 리스트 안에 딕셔너리 형태로 데이터들이 저장되�
 
 ```python
 import io
+import csv
 
 csv_writerow = io.StringIO()
 
@@ -92,3 +98,39 @@ for response in responses:
 
 <img width="643" alt="image" src="https://user-images.githubusercontent.com/88086271/178134401-e9429c71-8cf5-4530-b883-374ea8d8e5ae.png">
 
+이렇게 되면 csv파일이 만들어지게 되는 것이고 이후 저장은 본인이 원하는 디렉토리를 설정하면 됩니다.
+
+<br>
+
+## writerows
+
+```python
+import io
+import csv
+
+csv_writerows = io.StringIO()
+
+writer = csv.DictWriter(csv_writerows, fieldnames=MAJOR_INFO.keys())
+
+csv_list = list()
+
+for response in responses:
+  if "외국어" in response["SCHUL_NM"]:
+    csv_list.append(response)
+
+writer.writerows(csv_list)
+
+csv_writerows.getvalue()
+```
+
+이렇게 했을 때 ```csv_writerows```를 확인해보면 이렇게 값이 저장된 걸 확인할 수 있습니다.
+
+<img width="643" alt="image" src="https://user-images.githubusercontent.com/88086271/178134588-d75ff54f-a269-4998-82a8-50b7a731dc00.png">
+
+<br>
+
+## Outro
+
+이렇게해서 csv파일 만드는 법을 알아봤습니다.
+
+처음에는 익숙치 않은데, 역시 반복으로 하다보면 충분히 적응되네요.
