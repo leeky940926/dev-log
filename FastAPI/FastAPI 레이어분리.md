@@ -1,10 +1,14 @@
 # FastAPI 레이어분리
 
+[티스토리 블로그 바로가기](https://kyleeee.tistory.com/entry/TIL34-FastAPI-레이어분리)
+
 공식문서 처음 시작할 때, ```main.py```에서 모든 걸 해결했었습니다.
 
 하지만 실무는 그렇지 않죠
 
 이 부분 역시 공식문서의 [Bigger Applications - Multiple Files](https://fastapi.tiangolo.com/tutorial/bigger-applications/) 에 설명되어 있습니다.
+
+다만, 여기선 url안에서 API를 구현하는데, 그것도 분리해서 한 번 만들어봤습니다.
 
 <br>
 
