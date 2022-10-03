@@ -30,6 +30,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
     * [Django Channels Tutorial 2&3](https://github.com/leeky940926/dev-log/blob/main/Django/Django%20Channels%20Tutorial%20Part%202%20%26%203.md)
     * [APITestCase](https://github.com/leeky940926/dev-log/blob/main/Django/APITestCase.md)
     * [drf-yasg](https://github.com/leeky940926/dev-log/blob/main/Django/drf-yasg.md)
+    * [values를 이용해 annotate 조금 더 이해하고 쓰기](https://github.com/leeky940926/dev-log/blob/main/Django/values를%20이용해%20annotate%20조금%20더%20이해하고%20쓰기.md)
 * [Database](https://github.com/leeky940926/dev-log/tree/main/Database)
     * [Transaction(1/2)](https://github.com/leeky940926/dev-log/blob/main/Database/Transaction(1of2).md) 
     * [Transaction(2/2)](https://github.com/leeky940926/dev-log/blob/main/Database/Transaction(2of2).md)
