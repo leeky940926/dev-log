@@ -1,5 +1,6 @@
 # values를 이용해 annotate 조금 더 이해하고 쓰기
 
+[티스토리 블로그 바로가기](https://kyleeee.tistory.com/entry/TIL34-values를-이용해-annotate-조금-더-이해하고-쓰기)
 
 <br>
 
