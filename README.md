@@ -19,6 +19,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
     * [Celery](https://github.com/leeky940926/dev-log/blob/main/Python/Celery%20-%20Distributed%20Task%20Queue.md)
     * [CSV](https://github.com/leeky940926/dev-log/blob/main/Python/python으로%20csv파일%20만들기.md)
     * [코루틴 사용하기 Part 1 : 코루틴에 값 보내기](https://github.com/leeky940926/dev-log/blob/main/Python/%EC%BD%94%EB%A3%A8%ED%8B%B4%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%20Part1%20:%20%EC%BD%94%EB%A3%A8%ED%8B%B4%EC%97%90%20%EA%B0%92%20%EB%B3%B4%EB%82%B4%EA%B8%B0.md)
+    * [코루틴 사용하기 Part 2 : 코르틴 바깥으로 값 전달하기](https://github.com/leeky940926/dev-log/blob/main/Python/%EC%BD%94%EB%A3%A8%ED%8B%B4%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0%20Part2%20:%20%EC%BD%94%EB%A3%A8%ED%8B%B4%20%EB%B0%94%EA%B9%A5%EC%9C%BC%EB%A1%9C%20%EA%B0%92%20%EC%A0%84%EB%8B%AC%ED%95%98%EA%B8%B0.md)
 * [Django](https://github.com/leeky940926/dev-log/tree/main/Django)
     * [prefetch_related에서 to_attr로 DB Hits 줄이기](https://github.com/leeky940926/dev-log/blob/main/Django/prefetch_related%EC%97%90%EC%84%9C%20to_attr%EB%A1%9C%20DB%20Hits%20%EC%A4%84%EC%9D%B4%EA%B8%B0.md)
     * [get_fieldname_display](https://github.com/leeky940926/dev-log/blob/main/Django/get_fieldname_display.md)
