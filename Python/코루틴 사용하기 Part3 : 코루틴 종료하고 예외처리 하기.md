@@ -2,6 +2,10 @@
 
 <br>
 
+[티스토리 블로그 바로 가기](https://kyleeee.tistory.com/entry/TIL35-%EC%BD%94%EB%A3%A8%ED%8B%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B036-%EC%BD%94%EB%A3%A8%ED%8B%B4-%EC%A2%85%EB%A3%8C%ED%95%98%EA%B3%A0-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0)
+
+<br>
+
 보통 코루틴은 실행 상태 유지를 위해 while True를 사용합니다. 만약 코루틴을 종료하고 싶으면 close 메소드를 사용합니다.
 
 코루틴에 숫자 20개를 보낸 후 종료해보겠습니다.
