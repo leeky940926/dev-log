@@ -1,5 +1,7 @@
 # 코루틴(Coroutines)
 
+[티스토리 블로그 바로 가기](https://kyleeee.tistory.com/entry/TIL35-%EC%BD%94%EB%A3%A8%ED%8B%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B016-%EC%BD%94%EB%A3%A8%ED%8B%B4%EC%97%90-%EA%B0%92-%EB%B3%B4%EB%82%B4%EA%B8%B0)
+
 회사에서 FastAPI 도입을 앞두고 있어, 코루틴을 시작으로 비동기 프로그래밍에 대해 공부하려고 합니다.
 
 모든 출처는 [파이썬 코딩도장 코루틴(Coroutine)](https://dojang.io/mod/page/view.php?id=2469) 입니다.
