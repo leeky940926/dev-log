@@ -1,5 +1,7 @@
 # 하위 코루틴 반환값 가져오기
 
+[티스토리 블로그 바로 가기](https://kyleeee.tistory.com/entry/TIL35-%EC%BD%94%EB%A3%A8%ED%8B%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B056-%ED%95%98%EC%9C%84-%EC%BD%94%EB%A3%A8%ED%8B%B4-%EB%B0%98%ED%99%98%EA%B0%92-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0)
+
 <br>
 
 ## yield from으로 값을 여러 번 바깥으로 전달하기
