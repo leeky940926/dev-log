@@ -3,9 +3,14 @@
 
 <br>
 
+[티스토리 블로그 바로 가기](https://kyleeee.tistory.com/entry/TIL35-%EC%BD%94%EB%A3%A8%ED%8B%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B046-%EC%A7%A7%ED%98%BC%EC%9E%90%ED%95%B4%EB%B3%B4%EB%8A%94-%EC%BD%94%EB%A3%A8%ED%8B%B4-%EC%9E%91%EB%8F%99-%EC%88%9C%EC%84%9C)
+
+<br>
+
 이 부분은 파이썬 코딩도장엔 없고, 혼자 궁금해서 해보고 작성하게 되었습니다.
 
 만약 여러 개의 yield가 들어가면 끊어져서 나올텐데 실제로는 어떻게 나올까? 하는 궁금증이 생겨서 직접 해봤습니다.
+
 
 <br>
 
