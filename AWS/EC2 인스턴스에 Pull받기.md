@@ -1,8 +1,8 @@
-# EC2 인스턴스 Pull받기
+# EC2 인스턴스에 Pull받기
 
 EC2 생성도 했으니, 제 프로젝트를 서버로 띄어보겠습니다.
 
-[티스토리 블로그 바로 가기]()
+[티스토리 블로그 바로 가기](https://kyleeee.tistory.com/entry/TIL36-EC2에-Pull받기)
 
 <br>
 
