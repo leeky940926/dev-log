@@ -1,6 +1,6 @@
 # Elastic Beanstalk에 Django 애플리케이션 배포
 
-[티스토리 블로그 바로 가기]()
+[티스토리 블로그 바로 가기](https://kyleeee.tistory.com/entry/TIL37-Elastic-Beanstalk에-Django-애플리케이션-배포-1)
 
 <br>
 
