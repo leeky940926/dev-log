@@ -1,5 +1,7 @@
 # Flower
 
+[티스토리 블로그 바로 가기](https://kyleeee.tistory.com/entry/TIL39-flower)
+
 <br>
 
 ## Celery Monitoring
