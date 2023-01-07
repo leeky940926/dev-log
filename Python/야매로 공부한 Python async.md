@@ -6,7 +6,7 @@
 
 그래서 이번엔 제가 배운 파이썬 비동기 프로그래밍에 대해 작성해보겠습니다.
 
-[티스토리 블로그 바로가기]()
+[티스토리 블로그 바로가기](https://kyleeee.tistory.com/entry/TIL40-FastAPI에서-야매로-공부한-Python-async)
 
 <br>
 
