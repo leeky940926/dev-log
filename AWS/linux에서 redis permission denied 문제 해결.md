@@ -1,5 +1,7 @@
 # linux에서 redis permission denied 문제 해결
 
+[티스토리 블로그 바로 가기](https://kyleeee.tistory.com/entry/TIL42-linux에서-redis-permission-denied-문제-해결)
+
 ## 문제 
 
 EC2 인스턴스 내에서 ```redis.conf``` 파일에 접근하기 위해 ```cd /etc/redis```를 입력했더니 ```-bash: cd: redis: Permission denied``` 라며 접근할 수 없었다
