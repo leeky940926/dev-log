@@ -49,6 +49,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
     * [AWS IAM 사용자 추가 및 MFA 설정](https://github.com/leeky940926/dev-log/blob/main/AWS/AWS%20IAM을%20이용한%20사용자%20권한%20설정과%20MFA%20설정.md)
     * [AWS EC2 인스턴스 생성](https://github.com/leeky940926/dev-log/blob/main/AWS/AWS%20EC2%20인스턴스%20생성.md)
     * [AWS EC2 인스턴스에 Pull받기](https://github.com/leeky940926/dev-log/blob/main/AWS/EC2%20인스턴스%20Pull받기.md)
+    * [linux에서 redis permission denied 문제 해결](https://github.com/leeky940926/dev-log/blob/main/AWS/linux에서%20redis%20permission%20denied%20문제%20해결.md)
 * [Git](https://github.com/leeky940926/dev-log/tree/main/Git)
     * [Git Flow](https://github.com/leeky940926/dev-log/blob/main/Git/Git%20Flow.md)
     * [Git SSH정의부터 Clone까지](https://github.com/leeky940926/dev-log/blob/main/Git/Git%20SSH정의부터%20Clone까지.md)
