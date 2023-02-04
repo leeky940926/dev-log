@@ -44,6 +44,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
     * [Transaction(1/2)](https://github.com/leeky940926/dev-log/blob/main/Database/Transaction(1of2).md) 
     * [Transaction(2/2)](https://github.com/leeky940926/dev-log/blob/main/Database/Transaction(2of2).md)
     * [DB Indexing](https://github.com/leeky940926/dev-log/blob/main/Database/DB%20Indexing.md)
+    * [alembic에서 metadata를 왜 설정해야 할까](https://github.com/leeky940926/dev-log/blob/main/Database/alembic에서%20metadata를%20왜%20설정해야%20할까.md)
 * [AWS](https://github.com/leeky940926/dev-log/tree/main/AWS)
     * [AWS AI&ML 온라인 컨퍼런스 : ML 데이터 준비 및 WorkFlow 프로토타이핑 배워보기](https://github.com/leeky940926/dev-log/blob/main/AWS/AWS%20AI&ML%20온라인%20컨퍼런스%20:%20ML%20데이터%20준비%20및%20WorkFlow%20프로토타이핑%20배워보기.md)
     * [AWS IAM 사용자 추가 및 MFA 설정](https://github.com/leeky940926/dev-log/blob/main/AWS/AWS%20IAM을%20이용한%20사용자%20권한%20설정과%20MFA%20설정.md)
