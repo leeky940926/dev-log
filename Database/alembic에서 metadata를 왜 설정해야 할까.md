@@ -2,6 +2,10 @@
 
 <br>
 
+[티스토리 블로그 바로 가기](https://kyleeee.tistory.com/entry/TIL43-alembic에서-metadata를-왜-설정해야-할까)
+
+출처는 [alembic 1.9.2 공식문서](https://alembic.sqlalchemy.org/en/latest/autogenerate.html) 입니다.
+
 ## Intro
 
 현재 회사에서 FastAPI를 이용하다 보니 sqlalchemy를 이용하고 있습니다.
