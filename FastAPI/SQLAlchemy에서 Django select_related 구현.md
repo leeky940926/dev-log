@@ -6,6 +6,8 @@ FastAPI를 하며 SQLAlchemy를 사용하고 있는데, Django의 이 기능을 
 
 출처는 [SQLAlchemy](https://docs-sqlalchemy.readthedocs.io/ko/latest/orm/loading_relationships.html) 공식문서입니다.
 
+[티스토리](https://kyleeee.tistory.com/manage/posts/)에서 원글을 보실 수 있습니다.
+
 <br>
 
 ## joinedload
@@ -119,7 +121,7 @@ def get_albums(db: Session):
     return albums
 
 
-@app.get("")
+@app.get("/albums")
 def get_album_list(db: Session = Depends(get_db)):
     albums = get_albums(db=db)
     return {"result": albums}
