@@ -27,6 +27,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
     * [야매로 공부한 Python async](https://github.com/leeky940926/dev-log/blob/main/Python/야매로%20공부한%20Python%20async.md)
 * [FastAPI](https://github.com/leeky940926/dev-log/tree/main/FastAPI)
    * [psycopg2-binary 2.8.6 버전 설치 시 발생했던 에러](https://github.com/leeky940926/dev-log/blob/main/FastAPI/psycopg2-binary%202.8.6%20버전%20설치%20시%20발생했던%20에러.md)
+   * [SQLAlchemy에서 Django select_related 구현](https://github.com/leeky940926/dev-log/blob/main/FastAPI/SQLAlchemy에서%20Django%20select_related%20구현.md)
 * [Django](https://github.com/leeky940926/dev-log/tree/main/Django)
     * [prefetch_related에서 to_attr로 DB Hits 줄이기](https://github.com/leeky940926/dev-log/blob/main/Django/prefetch_related%EC%97%90%EC%84%9C%20to_attr%EB%A1%9C%20DB%20Hits%20%EC%A4%84%EC%9D%B4%EA%B8%B0.md)
     * [get_fieldname_display](https://github.com/leeky940926/dev-log/blob/main/Django/get_fieldname_display.md)
