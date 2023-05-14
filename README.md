@@ -75,6 +75,7 @@ Hi, I'm Lee Ki-Yong who works in the [AthenasLab](https://www.athenaslab.com/) a
 * [Life](https://github.com/leeky940926/dev-log/tree/main/Life)
    * [위코드 Talk Concert to 35기](https://github.com/leeky940926/dev-log/blob/main/Life/위코드%20Talk%20Concert%20to%2035기.md) 
    * [2022년 상반기 회고](https://github.com/leeky940926/dev-log/blob/main/Life/2022년%20상반기%20회고.md)
+   * [아테나스랩 팀 블로그 : 하루 트래픽이 5배 이상 늘어난 날, 서버 개발팀의 대응 기록](https://medium.com/athenaslab/하루-트래픽이-5배-이상-늘어난-날-서버-개발팀의-대응-기록-767da6ac4efe)
 * [Docker](https://github.com/leeky940926/dev-log/tree/main/Docker)
     * [Docker 1. Container](https://github.com/leeky940926/dev-log/blob/main/Docker/Docker(1)%20-%20Container.md)
     * [Docker 2. Docker 구조](https://github.com/leeky940926/dev-log/blob/main/Docker/Docker(2)%20-%20Docker%20구조.md)  
